@@ -15,3 +15,7 @@ generated/**
 
 .terraform.lock.hcl
 .env
+
+# ssh keys
+breakglass_id_rsa
+breakglass_id_rsa.pub
