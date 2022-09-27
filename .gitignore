@@ -1,8 +1,6 @@
 #  Local .terraform directories
 **/.terraform/*
 
-provider.tf
-
 # .tfstate files
 *.tfstate
 *.tfstate.*
@@ -16,3 +14,4 @@ generated/**
  **/.vscode/*
 
 .terraform.lock.hcl
+.env
