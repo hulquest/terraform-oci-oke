@@ -387,14 +387,6 @@ module "extensions" {
   enable_gatekeeper   = var.enable_gatekeeper
   gatekeeeper_version = var.gatekeeeper_version
 
-  # GPU Operator
-  install_gpu_operator  = var.enable_gpu_operator
-  gpu_operator_version  = var.gpu_operator_version
-
-  # Network Operator
-  install_network_operator  = var.enable_network_operator
-  network_operator_version  = var.network_operator_version
-
   # service account
   create_service_account               = var.create_service_account
   service_account_name                 = var.service_account_name
