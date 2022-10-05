@@ -892,6 +892,33 @@ variable "gatekeeeper_version" {
   description = "The version of Gatekeeper to install"
 }
 
+#GPU Operator
+variable "enable_gpu_operator" {
+  type        = bool
+  default     = false
+  description = "Whether to install GPU operator"
+}
+
+variable "gpu_operator_version" {
+  type        = string
+  default     = "v1.1.0"
+  description = "The version of GPU Operator to install"
+}
+
+# (TODO): Need RDMA capable clusters to test this. Do NOT enable
+# Network Operator
+variable "enable_network_operator" {
+  type        = bool
+  default     = false
+  description = "Whether to install Network operator"
+}
+
+variable "network_operator_version" {
+  type        = string
+  default     = "v1.3.0"
+  description = "The version of Network Operator to install"
+}
+
 # serviceaccount
 
 variable "create_service_account" {

@@ -46,6 +46,18 @@ locals {
     }
   )
 
+  install_gpu_operator_template = templatefile("${path.module}/scripts/install_gpu_operator.template.sh",
+    {
+      gpu_operator_version = var.gpu_operator_version
+    }
+  )
+
+  install_network_operator_template = templatefile("${path.module}/scripts/install_network_operator.template.sh",
+    {
+      network_operator_version = var.network_operator_version
+    }
+  )
+
   install_helm_template = templatefile("${path.module}/scripts/install_helm.template.sh",
     {
       ol = var.operator_os_version
