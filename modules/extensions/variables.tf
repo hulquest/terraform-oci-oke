@@ -85,20 +85,6 @@ variable "install_calico" {
   type = bool
 }
 
-# gpu operator
-variable "gpu_operator_version" {}
-
-variable "install_gpu_operator" {
-  type = bool
-}
-
-# network operator
-variable "network_operator_version" {}
-
-variable "install_network_operator" {
-  type = bool
-}
-
 #metricserver
 
 variable "enable_metric_server" {
