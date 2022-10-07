@@ -952,7 +952,7 @@ variable "enable_gpu_operator" {
 
 variable "gpu_operator_version" {
   type        = string
-  default     = "v1.1.0"
+  default     = "v1.11.0"
   description = "The version of GPU Operator to install"
 }
 

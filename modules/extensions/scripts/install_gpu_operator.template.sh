@@ -6,6 +6,6 @@ if [ ! -f .gpu_operator_completed ]; then
 
   helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
   helm repo update
-  helm install --version ${gpu_operator_version} --create-namespace --namespace nvidia-gpu-operator --devel nvidia/gpu-operator --wait --generate-name > /dev/null 2>&1
+  helm install --wait --generate-name  --version ${gpu_operator_version} --namespace gpu-operator --create-namespace nvidia/gpu-operator
   touch .gpu_operator_completed
 fi
