@@ -102,13 +102,7 @@ resource "oci_core_network_security_group_security_rule" "cp_ingress_additional_
     }
   }
 
-  icmp_options {
-    type = 3
-    code = 4
-  }
-
   count = length(var.control_plane_allowed_cidrs)
-
 }
 
 # workers nsg and rules
